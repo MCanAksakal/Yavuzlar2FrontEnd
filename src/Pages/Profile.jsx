@@ -24,8 +24,7 @@ export default function Profile() {
 
   useEffect(() => {
     let token = sessionStorage.getItem("token");
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/GetToken.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetToken.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -100,8 +99,7 @@ export default function Profile() {
 
   useEffect(() => {
     let userid = sessionStorage.getItem("username");
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/GetProfileData.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetProfileData.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -128,8 +126,7 @@ export default function Profile() {
   }, []);
 
   useEffect(() => {
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/GetPersons.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetPersons.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -159,7 +156,7 @@ export default function Profile() {
     let name = taskName;
     let status = taskStatus;
     let person = taskPerson;
-    let InsertAPIUrl = "https://yavuzlar2backend.herokuapp.com/api/AddTask.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/AddTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -190,8 +187,7 @@ export default function Profile() {
 
   function RemoveTask(id) {
     let taskId = id;
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/RemoveTask.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/RemoveTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -223,8 +219,7 @@ export default function Profile() {
     let name = taskNameEdit;
     let status = taskStatusEdit;
     let person = taskPersonEdit;
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/EditTask.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/EditTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",

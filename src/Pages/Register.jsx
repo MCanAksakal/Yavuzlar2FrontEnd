@@ -19,8 +19,7 @@ export default function Register() {
   function InsertUser() {
     let uname = username;
     let pass = password;
-    let InsertAPIUrl =
-      "https://yavuzlar2backend.herokuapp.com/api/InsertUser.php";
+    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/InsertUser.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
