@@ -19,7 +19,8 @@ export default function Login() {
   function LoginUser() {
     let uname = username;
     let pass = password;
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/LoginUser.php";
+    let InsertAPIUrl =
+      "https://yavuzlar2backend.herokuapp.com/api/LoginUser.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",

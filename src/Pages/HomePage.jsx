@@ -22,7 +22,8 @@ export default function App() {
 
   useEffect(() => {
     let token = sessionStorage.getItem("token");
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetToken.php";
+    let InsertAPIUrl =
+      "https://yavuzlar2backend.herokuapp.com/api/GetToken.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -96,7 +97,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetData.php";
+    let InsertAPIUrl = "https://yavuzlar2backend.herokuapp.com/api/GetData.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -123,7 +124,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/GetPersons.php";
+    let InsertAPIUrl =
+      "https://yavuzlar2backend.herokuapp.com/api/GetPersons.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -153,7 +155,7 @@ export default function App() {
     let name = taskName;
     let status = taskStatus;
     let person = taskPerson;
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/AddTask.php";
+    let InsertAPIUrl = "https://yavuzlar2backend.herokuapp.com/api/AddTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -184,7 +186,8 @@ export default function App() {
 
   function RemoveTask(id) {
     let taskId = id;
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/RemoveTask.php";
+    let InsertAPIUrl =
+      "https://yavuzlar2backend.herokuapp.com/api/RemoveTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -216,7 +219,8 @@ export default function App() {
     let name = taskNameEdit;
     let status = taskStatusEdit;
     let person = taskPersonEdit;
-    let InsertAPIUrl = "http://localhost:3000/BackEnd/api/EditTask.php";
+    let InsertAPIUrl =
+      "https://yavuzlar2backend.herokuapp.com/api/EditTask.php";
     let headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
