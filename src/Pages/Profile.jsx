@@ -6,8 +6,6 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Profile() {
-  const { state } = useLocation();
-  console.log(state);
   const navigateTo = useNavigate();
   const [todos, setTodos] = useState([]);
   const [persons, setPersons] = useState([]);
@@ -94,7 +92,7 @@ export default function Profile() {
   }
 
   function closeEditModal() {
-    setIsOpen(false);
+    setIsOpenEdit(false);
   }
 
   useEffect(() => {

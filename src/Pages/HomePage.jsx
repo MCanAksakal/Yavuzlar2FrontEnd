@@ -92,7 +92,7 @@ export default function App() {
   }
 
   function closeEditModal() {
-    setIsOpen(false);
+    setIsOpenEdit(false);
   }
 
   useEffect(() => {
